@@ -4,7 +4,7 @@
 
 
 CREATE TABLE "employees" (
-    "emp_no" INTEGER(11)   NOT NULL,
+    "emp_no" INTEGER   NOT NULL,
     "birth_date" DATE   NOT NULL,
     "first_name" VARCHAR(30)   NOT NULL,
     "last_name" VARCHAR(30)   NOT NULL,
@@ -16,29 +16,29 @@ CREATE TABLE "employees" (
 );
 
 CREATE TABLE "title" (
-    "emp_no" INTEGER(11)   NOT NULL,
+    "emp_no" INTEGER   NOT NULL,
     "title" VARCHAR(30)   NOT NULL,
     "from_date" DATE   NOT NULL,
     "to_date" DATE   NOT NULL
 );
 
 CREATE TABLE "dept_emp" (
-    "emp_no" INTEGER(11)   NOT NULL,
+    "emp_no" INTEGER   NOT NULL,
     "dept_no" VARCHAR(4)   NOT NULL,
     "from_date" DATE   NOT NULL,
     "to_date" DATE   NOT NULL
 );
 
 CREATE TABLE "salaries" (
-    "emp_no" INTEGER(11)   NOT NULL,
-    "salary" INTEGER(11)   NOT NULL,
+    "emp_no" INTEGER   NOT NULL,
+    "salary" INTEGER   NOT NULL,
     "from_date" DATE   NOT NULL,
     "to_date" DATE   NOT NULL
 );
 
 CREATE TABLE "dept_manager" (
     "dept_no" VARCHAR(4)   NOT NULL,
-    "emp_no" INTEGER(11)   NOT NULL,
+    "emp_no" INTEGER   NOT NULL,
     "from_date" DATE   NOT NULL,
     "to_date" DATE   NOT NULL
 );
